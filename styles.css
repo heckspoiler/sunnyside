@@ -1,6 +1,8 @@
 /* font-family: 'Barlow', sans-serif;
 font-family: 'Fraunces', serif; */
 
+/* general styling */
+
 :root {
       font-size: 18px;
 }
@@ -13,6 +15,10 @@ h1 {
       letter-spacing: 0.8rem;
 }
 
+h2 {
+      font-family: 'Fraunces', serif;
+}
+
 * {
       box-sizing: border-box;
       margin: 0;
@@ -21,9 +27,11 @@ h1 {
 
 a {
       text-decoration: none;
-      color: white;
       font-family: 'Barlow', sans-serif;
 }
+
+
+/* header styling and hero section styling */
 
 header {
 
@@ -36,7 +44,7 @@ header {
 
 .header-top {
       display: flex;
-      height: 4rem;
+      height: 5rem;
       width: 100vw;
       justify-content: space-between;
       padding: 0 1.5rem 0 1.5rem;
@@ -55,6 +63,7 @@ nav a {
 
       padding: 15px 25px;
       font-size: 0.8rem;
+      color: white;
 }
 
 nav a:last-of-type {
@@ -71,5 +80,75 @@ nav a:last-of-type {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      height: 57%;
+      height: 53%;
+}
+
+
+/* first section styling */
+
+.first-section {
+      height: 150vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+}
+
+.first-section-subsection {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+}
+
+.quarter-section {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 6rem;
+      gap: 30px;
+}
+
+.quarter-section a {
+      font-size: 0.8rem;
+      font-family: 'Fraunces', serif;
+      text-transform: uppercase;
+
+}
+
+.quarter-section a::before {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 6rem;
+      margin-left: -4px;
+      background-color: hsl(51, 100%, 49%);
+      margin-top: 10px;
+      z-index: -1;
+      border-radius: 4px;
+      opacity: 0.4;
+}
+
+.quarter-section p {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      color: hsl(232, 10%, 55%);
+      line-height: 1.7;
+      font-size: 0.9rem;
+      letter-spacing: 0.7px;
+}
+
+.quarter-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 2.3rem;
+
+}
+
+.egg {
+      background-image: url("./images/desktop/image-transform.jpg")
+}
+
+.background-div-lower {
+      background-image: url("./images/desktop/image-stand-out.jpg")
 }
